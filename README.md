@@ -1,8 +1,12 @@
 # Teste front-end - UOL Produtos Digitais
 
-<div style="text-align: center">
- <img src="https://c.tenor.com/dp4wyZ0yRUcAAAAC/duke-nukem-gaming.gif" width="200"/>
+<div style="display: flex; width: 100%; justify-content: center;">
+ <img src="https://c.tenor.com/dp4wyZ0yRUcAAAAC/duke-nukem-gaming.gif" width="400"/>
 </div>
+
+<p style="text-align: center;">
+  >>>> Coded by Giovanni Tonussi. Obrigado por conferir! Por favor leia as instruções abaixo: <<<<
+</p>
 
 ### Infra:
 
@@ -24,7 +28,7 @@ Usei também algumas libs para aumentar a produtividade. São elas:
 
 Como o endpoint foi configurado para não aceitar cross-origin, baixei o json e criei um server a partir dele. Dessa forma, o código foi criado para fazer requisições a uma API externa.
 
-Para criar o server, é necessário instalar o ```json-server```:
+**Para criar o server, é necessário instalar o ```json-server```:**
 
 - Abra um terminal/cmd na pasta do projeto
 - Rode: *npm install -g json-server*
