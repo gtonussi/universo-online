@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Teste front-end - UOL Produtos Digitais
 
-## Getting Started
+### Infra:
 
-First, run the development server:
+Este projeto foi criado com ```next.js```.
+Mais sobre o framework: https://nextjs.org/
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+A estilização foi feita toda com ```styled-components```.
+Mais sobre a lib: https://styled-components.com/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Usei também algumas libs para aumentar a produtividade. São elas:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- ```axios``` para requisições a API.
+- ```json-server``` para criar um server fake.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- ```react-hook-form``` para criação dos formulários.
+- ```yup``` para validação dos formulários.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### IMPORTANTE: 
 
-## Learn More
+Como o endpoint foi configurado para não aceitar cross-origin, baixei o json e criei um server a partir dele. Dessa forma, o código foi criado para fazer requisições a uma API externa.
 
-To learn more about Next.js, take a look at the following resources:
+Para criar o server, é necessário instalar o ```json-server```:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1- Abra um terminal/cmd na pasta do projeto
+1- Rode: *npm install -g json-server*
+1- Rode: *json-server --watch db.json*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Deixar a porta 3000 livre :)**
 
-## Deploy on Vercel
+Para rodar o projeto, são os típicos comandos do Next:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1- Abra um terminal/cmd na pasta do projeto
+1- Rode: *yarn install*
+1- Crie um preview: *yarn dev*
