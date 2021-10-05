@@ -29,6 +29,7 @@ export default function ClientInfo() {
         })
         .then(res => {
           setCustomer(res.data)
+          console.log(customer)
         })
         .catch(err => {
           alert("Server indisponível. Erro: " + err.message)
